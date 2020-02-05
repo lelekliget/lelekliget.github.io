@@ -5,6 +5,23 @@ body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
 }
+#header {
+  background-color: white;
+  height: 130px;
+  line-height: 150px
+}
+#header a {
+  color: #F16A8A;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+#header a:hover {
+  cursor: pointer;
+}
+.container {
+  max-width: 1000px;
+  min-width: 200px;
+}
 #header-nav {
   margin: 10px auto 0;
   padding: 0;
@@ -12,6 +29,10 @@ body {
   float: right;
   display: flex;
   margin-top: 0;
+}
+#header-nav li {
+  display: inline;
+  padding-left: 5px;
 }
 #nav-item {
   display: flex;
@@ -47,51 +68,16 @@ body {
 		margin-top: 40px;
 	}
 }
-
-#header {
-  background-color: white;
-  height: 130px;
-  line-height: 150px
-}
-#header a {
-  color: #F16A8A;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-}
-#header a:hover {
-  cursor: pointer;
-}
-
-#header-title {
-  color: #F16A8A;
-  font-size: 3em;
-  font-weight: bold;
-  font-family:'Dancing Script', cursive;
-}
-
-#header-nav {
-  display: block;
-  float: right;
-  margin-top: 0;
-}
-
-#header-nav li {
-  display: inline;
-  padding-left: 5px;
-}
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
 #footer {
   background-color: #F26385;
-  height: 250px;
+  min-height: 250px;
   color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .column {
-  min-width: 300px;
-  display: inline-block;
-  vertical-align: top;
+  min-width: 200px;
 }
 a {
   color: #F16A8A;
@@ -135,11 +121,6 @@ h3 {
  font-size: 25px;
  color: #F16A8A;
 }
-.fb-page {
-  float: right;
-  margin-right: 40px;
-  margin-top: 50px;
-}
 #element {
   width: 315px;
   height: 550px;
@@ -166,11 +147,6 @@ h3 {
 .texts {
     padding: 0 30px 15px 30px;
     margin-top: -20px;
-}
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
 }
 .row {margin: 0 -5px;}
 .row:after {
@@ -289,4 +265,71 @@ hr {
 }
 .cardtext {
   padding: 10px;
+}
+@media screen and (max-width:931px) {
+  #header-nav {
+    display: none;
+  }
+  #footer {
+  }
+}
+@media screen and (min-width:931px) {
+  #mySidepanel {
+    display: none;
+  }
+  .openbtn {
+    display: none;
+  }
+}
+/*new thing*/
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 250px;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
+fp-page {
+  margin: auto 0;
+}
+#contacts {
+  min-width: 300px;
 }
