@@ -177,7 +177,6 @@ h3 {
   color: #F16A8A;
   border: 2px solid #F16A8A;
   background-color: white;
-  padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
 }
@@ -259,10 +258,10 @@ th, td {
 #block {
   margin: 5px 0;
 }
-hr {
-  border: 1px solid #F16A8A;
+/*hr {
+  border: 1px solid #F16A8A
   border-radius: 0.5px;
-}
+}*/
 .cardtext {
   padding: 10px;
 }
@@ -293,6 +292,7 @@ hr {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  box-shadow: 1px 1px 4px grey;
 }
 
 .sidepanel a {
@@ -304,9 +304,9 @@ hr {
   transition: 0.3s;
 }
 
-.sidepanel a:hover {
+/*.sidepanel a:hover {
   color: ##F16A8A;
-}
+}*/
 
 .sidepanel .closebtn {
   position: absolute;
