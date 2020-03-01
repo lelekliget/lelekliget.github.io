@@ -23,6 +23,15 @@
   </head>
 <body>
   <script>
+  function openNav() {
+    document.getElementById("mySidepanel").style.width = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+  }
+  </script>
+  <script>
   window.fbAsyncInit = function() {
     FB.init({
       appId            : 'your-app-id',
@@ -46,12 +55,10 @@
     </ul>
   </div>
   </div>
-<div id="content">
-    <div class="container">
       <img src="Images\about1.jpg" width="944" height="400" class="center">
       <div class="aboutme">
         <h3 class="aboutme-title">Bemutatkozás</h3>
-        <div class="aboutme-content">
+        <div id="aboutmeContent">
           <p>Bányai Andrea gyógytornász vagyok, 3 gyermek édesanyja.</p>
           <p>1994-ben végeztem Szegeden, az Orvostudományi Egyetemen, gyógytornászként.</p>
           <p>1998-ban egészségügyi közgazdász diplomát szereztem.</p>
@@ -70,27 +77,25 @@
           <p>Így született meg a LélekLiget Gyógytorna Rendelő Algyőn, ahova gyógytorna kezelést,  rehabilitációt igénylő páciensek mellett az egészségük megőrzéséért tenni kívánó embereknek is nyújtunk szolgáltatást.</p>
         </div>
       </div>
-    </div>
+ <div id="footer">
+   <div class="container">
+     <div class="FooterColumn">
+       <img src="Images\h3.png" width="165px" height="225px" class="imgh3">
+     </div>
+   </div>
+   <div class="container">
+     <div class="Footercolumn" id="contacts">
+       <ul style="list-style-type:none; padding:0;"><h2>Elérhetőségek:</h2>
+         <br>
+         <li><img id="ficon" src="Images\location2.png" width="24px">Algyő, Szamóca u. 24</li>
+         <br>
+         <li><img id="ficon" src="Images\phone2.png" width="24px">Telefon: <a class="fa" href="tel:+36205640234" id="number" class="footer-word">+36 20 564 0234</a></li>
+         <br>
+         <li><img id="ficon" src="Images\email.png" width="24px">Email: <a class="fa" href="mailto:b.andreaanna@gmail.com">b.andreaanna@gmail.com</a></li>
+     </ul>
+     </div>
+     </div>
+   <div class="fb-page" data-href="https://www.facebook.com/lelekliget.gyogytorna/" data-tabs="" data-width="300" data-height="214" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/lelekliget.gyogytorna/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/lelekliget.gyogytorna/">Lélekliget - Gyógytorna</a></blockquote></div>
  </div>
-<div id="footer">
-  <div class="container">
-    <div class="column">
-      <img src="Images\h3.png" width="165px" height="225px" class="imgh3">
-    </div>
-  </div>
-  <div class="container">
-    <div class="column">
-      <ul style="list-style-type:none; padding:0;"><h2>Elérhetőségek:</h2>
-        <br>
-        <li><img id="ficon" src="Images\location2.png" width="24px">Algyő, Szamóca u. 24</li>
-        <br>
-        <li><img id="ficon" src="Images\phone2.png" width="24px">Telefon: <a class="fa" href="tel:+36205640234" id="number" class="footer-word">+36 20 564 0234</a></li>
-        <br>
-        <li><img id="ficon" src="Images\email.png" width="24px">Email: <a class="fa" href="mailto:b.andreaanna@gmail.com">b.andreaanna@gmail.com</a></li>
-    </ul>
-    </div>
-  <div class="fb-page" data-href="https://www.facebook.com/lelekliget.gyogytorna/" data-tabs="" data-width="300" data-height="214" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/lelekliget.gyogytorna/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/lelekliget.gyogytorna/">Lélekliget - Gyógytorna</a></blockquote></div>
-</div>
-</div>
 </body>
 </html>

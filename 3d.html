@@ -7,6 +7,15 @@
   </head>
 <body>
   <script>
+  function openNav() {
+    document.getElementById("mySidepanel").style.width = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+  }
+  </script>
+  <script>
   window.fbAsyncInit = function() {
     FB.init({
       appId            : 'your-app-id',
@@ -19,17 +28,29 @@
 <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v5.0"></script>
-  <div id="header">
-  <div class="container">
-    <a id="sleek" href="index.html"><img src="TOPLogo.jpg" width="195" height="110"></a>
-    <ul id="header-nav">
-      <li id="nav-item"><a id="sleek" href="about.html">Bemutatkozás</a></li>
-      <li id="nav-item"><a id="sleek" href="egyeni.html">Egyéni kezelések</a></li>
-      <li id="nav-item"><a id="sleek" href="csoportos.html">Csoportos órák</a></li>
-      <li id="nav-item"><a id="sleek" href="arlista.html">Áraink</a></li>
-    </ul>
-  </div>
-  </div>
+<div id="header">
+<div class="container">
+  <a id="sleek"href="index.html"><img id="tp"src="Images\TOPLogo.jpg" width="195"></a>
+  <ul id="header-nav">
+    <li id="nav-item"><a id="sleek" href="about.html">Bemutatkozás</a></li>
+    <li id="nav-item"><a id="sleek" href="egyeni.html">Egyéni kezelések</a></li>
+    <li id="nav-item"><a id="sleek" href="csoportos.html">Csoportos órák</a></li>
+    <li id="nav-item"><a id="sleek" href="arlista.html">Áraink</a></li>
+  </ul>
+<button class="openbtn" onclick="openNav()">☰</button>
+</div>
+<div id="mySidepanel" class="sidepanel">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+<a href="#">Bemutatkozás</a>
+<hr>
+<a href="#">Egyéni kezelések</a>
+<hr>
+<a href="#">Csoportos órák</a>
+<hr>
+<a href="#">Áraink</a>
+<hr>
+</div>
+</div>
 <div id="content">
     <div class="container">
       <div class="dynamic">
@@ -62,25 +83,25 @@
       </div>
     </div>
  </div>
-<div id="footer">
-  <div class="container">
-    <div class="column">
-      <img src="h3.png" width="165px" height="225px" class="imgh3">
-    </div>
-  </div>
-  <div class="container">
-    <div class="column">
-      <ul style="list-style-type:none;"><h2>Elérhetőségek:</h2>
-        <br>
-        <li>Algyő, Szamóca u. 24</li>
-        <br>
-        <li>Telefon:<a class="fa" href="tel:+36205640234" id="number" class="footer-word"> +36 20 564 0234</a></li>
-        <br>
-        <li>Email:<a class="fa" href="mailto:b.andreaanna@gmail.com"> b.andreaanna@gmail.com</a></li>
-    </ul>
-    </div>
-  <div class="fb-page" data-href="https://www.facebook.com/lelekliget.gyogytorna/" data-tabs="" data-width="300" data-height="214" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/lelekliget.gyogytorna/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/lelekliget.gyogytorna/">Lélekliget - Gyógytorna</a></blockquote></div>
-</div>
-</div>
+ <div id="footer">
+   <div class="container">
+     <div class="FooterColumn">
+       <img src="Images\h3.png" width="165px" height="225px" class="imgh3">
+     </div>
+   </div>
+   <div class="container">
+     <div class="Footercolumn" id="contacts">
+       <ul style="list-style-type:none; padding:0;"><h2>Elérhetőségek:</h2>
+         <br>
+         <li><img id="ficon" src="Images\location2.png" width="24px">Algyő, Szamóca u. 24</li>
+         <br>
+         <li><img id="ficon" src="Images\phone2.png" width="24px">Telefon: <a class="fa" href="tel:+36205640234" id="number" class="footer-word">+36 20 564 0234</a></li>
+         <br>
+         <li><img id="ficon" src="Images\email.png" width="24px">Email: <a class="fa" href="mailto:b.andreaanna@gmail.com">b.andreaanna@gmail.com</a></li>
+     </ul>
+     </div>
+     </div>
+   <div class="fb-page" data-href="https://www.facebook.com/lelekliget.gyogytorna/" data-tabs="" data-width="300" data-height="214" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/lelekliget.gyogytorna/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/lelekliget.gyogytorna/">Lélekliget - Gyógytorna</a></blockquote></div>
+ </div>
 </body>
 </html>
