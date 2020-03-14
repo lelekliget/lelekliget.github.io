@@ -285,7 +285,7 @@ th, td {
 @media screen and (max-width: 600px) {
   .column {
     margin-bottom: 20px;
-    width: 75%;
+    width: 85%;
     display: block;
   }
 }
