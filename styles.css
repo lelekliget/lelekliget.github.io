@@ -200,9 +200,8 @@ p {
   text-decoration: none;
 }
 .row {
-  margin: 0 -5px;
-  margin-left: 10%;
-  margin-top: 10%;
+  margin-left: 5%;
+  margin-top: 5%;
   color: #000;
 }
 .row:after {
