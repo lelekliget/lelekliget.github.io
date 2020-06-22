@@ -74,12 +74,16 @@ body {
   cursor: pointer;
 }
 .dynamic-btn:hover {
+  font-weight: bold;
+}
+.dynamic-btn:active {
   background: #F16A8A;
   color: white;
 }
 .f {
   max-width: 100%;
   max-height: 100vh;
+  bot
 }
 .fa {
   color: white;
@@ -205,7 +209,8 @@ p {
 }
 .row {
   margin-left: 5%;
-  margin-top: 5%;
+  margin-top: 1%;
+  margin-bottom: 2%;
   color: #000;
 }
 .row:after {
@@ -280,6 +285,9 @@ th, td {
   padding: 6px;
   text-align: center;
   border-bottom: 1px solid #ddd;
+}
+#nincs {
+  display: none;
 }
 @media screen and (max-height: 300px) {
 	#header-nav {
